@@ -1,9 +1,9 @@
-from flask import flask
-import rhino3dm import 
+from flask import Flask
+import rhino3dm
 
-app = flash (__name__)
+app = Flask(__name__)
 
 
-@app.root('/')
+@app.route('/')
 def hello_world():
 	return "hello world"
